@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <section>
+    <form action="/techs" method="POST">
+        <h1>Awesome web form!!!</h1>
+        <p>Enter the name of the awesome tech you would like to add:</p>
+        <label for="techName">Tech:</label><input id="techName" name="tech" type="text"/>
+    </form>
+    </section>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <section>
+    <form action="/ratings" method="POST">
+        <h1>Awesome web form!!!</h1>
+        <p>Enter the name of the awesome tech you would like to add:</p>
+        <label><input type="radio" name="which-tech" value="{{ tech1['_id'] }}">{{ tech1['name'] }}</label>
+        <label><input type="radio" name="which-tech" value="{{ tech2['_id'] }}">{{ tech2['name'] }}</label>
+        <input type="submit" value="i am a button">
+    </form>
+    </section>
+{% endblock %}
